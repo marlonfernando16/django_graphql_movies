@@ -219,7 +219,7 @@ class Query(ObjectType):
         return Movie.objects.all()
 ```
 
-##Criando Mutations
+## Criando Mutations
 
 Primeiro, vamos criar dois inputs referentes aos nosso modelos.Insira o código abaixo:
 
@@ -361,7 +361,7 @@ GRAPHENE = {
     'SCHEMA': 'django_graphql_movies.schema.schema'
 }
 
-##Criando rota para acessar o graphql
+## Criando rota para acessar o graphql
 
 no arquivo django_graphql_movies/urls.py, altere o código e deixe da seguinte forma:
 
@@ -388,7 +388,7 @@ Acesse a rota para o graphql:
 http://127.0.0.1:8000/graphql/
 ```
 
-##Executando Queries
+## Executando Queries
 
 Obtendo id e nome de todos os atores:
 
@@ -416,7 +416,7 @@ query getMovie {
 }
 ```
 
-##Executando Mutations
+## Executando Mutations
 
 Criando um ator pssando o nome:
 
