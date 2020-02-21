@@ -1,12 +1,12 @@
 import graphene
-import movies.schema
+import example_app.schema
 
-class Query(movies.schema.Query, graphene.ObjectType):
+class Query(example_app.schema.Query, graphene.ObjectType):
     # This class will inherit from multiple Queries
     # as we begin to add more apps to our project
     pass
 
-class Mutation(movies.schema.Mutation, graphene.ObjectType):
+class Mutation(example_app.schema.Mutation, graphene.ObjectType):
     # This class will inherit from multiple Queries
     # as we begin to add more apps to our project
     pass
